@@ -7,12 +7,11 @@ import {
 
 import profile from "../assets/hero.png";
 
-// 👇 EASY TO EDIT LINKS (JUST CHANGE HERE)
 const LINKS = {
-  resume: "/resume.pdf", // put resume in public folder
-  contact: "#contact",   // scroll to contact section
-  github: "https://github.com/your-username",
-  linkedin: "https://linkedin.com/in/your-username",
+  resume: "/resume.pdf",
+  contact: "#contact",
+  github: "https://github.com/shahjahankhan462001-rgb",
+  linkedin: "https://www.linkedin.com/in/shahjahan-850819370/",
   instagram: "https://instagram.com/your-username",
 };
 
@@ -27,7 +26,7 @@ export default function Hero() {
       {/* Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
 
-      <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-20 items-center relative z-10">
+      <div className="max-w-7xl mx-auto px-6 py-16 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center relative z-10">
 
         {/* LEFT SIDE */}
         <motion.div
@@ -45,7 +44,7 @@ export default function Hero() {
           </div>
 
           {/* Name */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-tight mb-6">
             <span className="text-white">Hi, I'm</span>
             <br />
             <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
@@ -54,41 +53,36 @@ export default function Hero() {
           </h1>
 
           {/* Role */}
-          <h2 className="text-2xl md:text-4xl font-semibold text-gray-300 mb-8">
-            Frontend Developer &
-            <span className="text-cyan-400"> UI Designer</span>
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold text-gray-300 mb-8">
+            FullStack Developer &{" "}
+            <span className="text-cyan-400">UI Designer</span>
           </h2>
 
           {/* Description */}
-          <p className="text-gray-400 text-lg leading-8 max-w-2xl mb-10">
+          <p className="text-base sm:text-lg leading-7 sm:leading-8 max-w-2xl mb-8 md:mb-10 text-gray-400">
             I build modern, responsive and animated web applications using
             React, Tailwind CSS and JavaScript with clean UI/UX design.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
 
             <a
               href="/resume.pdf"
               download
               className="relative px-7 py-3 rounded-2xl font-semibold text-white overflow-hidden
-  bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600
-  shadow-lg shadow-cyan-500/30
-  transition-all duration-300 hover:scale-105
-  flex items-center justify-center"
+              bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600
+              shadow-lg shadow-cyan-500/30
+              transition-all duration-300 hover:scale-105
+              flex items-center justify-center"
             >
-              {/* Shine */}
               <span className="absolute inset-0 bg-white/10 opacity-0 hover:opacity-20 transition-all duration-500" />
-
-              {/* Glow */}
               <span className="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 blur-xl opacity-40 animate-pulse" />
-
-              {/* Text */}
               <span className="relative z-10 text-lg leading-none">
                 Download CV
               </span>
             </a>
-            {/* Contact */}
+
             <a
               href={LINKS.contact}
               className="border border-white/20 bg-white/5 backdrop-blur-xl px-8 py-4 rounded-2xl text-lg hover:bg-white/10 transition-all duration-300"
@@ -101,7 +95,6 @@ export default function Hero() {
           {/* Social Links */}
           <div className="flex gap-6 mt-12">
 
-            {/* GitHub */}
             <a
               href={LINKS.github}
               target="_blank"
@@ -110,7 +103,6 @@ export default function Hero() {
               <FaGithub />
             </a>
 
-            {/* LinkedIn */}
             <a
               href={LINKS.linkedin}
               target="_blank"
@@ -119,7 +111,6 @@ export default function Hero() {
               <FaLinkedin />
             </a>
 
-            {/* Instagram */}
             <a
               href={LINKS.instagram}
               target="_blank"
@@ -129,7 +120,6 @@ export default function Hero() {
             </a>
 
           </div>
-
         </motion.div>
 
         {/* RIGHT SIDE */}
@@ -145,8 +135,8 @@ export default function Hero() {
             {/* Glow */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 blur-3xl opacity-40 animate-pulse" />
 
-            {/* Image Circle */}
-            <div className="relative w-[350px] h-[350px] md:w-[450px] md:h-[450px] rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-700 p-[5px] shadow-[0_0_80px_rgba(34,211,238,0.4)]">
+            {/* Image */}
+            <div className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[450px] md:h-[450px] rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-700 p-[5px] shadow-[0_0_80px_rgba(34,211,238,0.4)]">
 
               <div className="w-full h-full rounded-full bg-[#0f172a] overflow-hidden flex items-center justify-center">
 
@@ -160,20 +150,20 @@ export default function Hero() {
 
             </div>
 
-            {/* Floating Cards */}
+            {/* Floating Cards (hidden on mobile) */}
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{ repeat: Infinity, duration: 4 }}
-              className="absolute top-10 -left-10 bg-white/10 backdrop-blur-xl border border-white/10 px-6 py-4 rounded-2xl"
+              className="absolute top-10 -left-10 hidden sm:block bg-white/10 backdrop-blur-xl border border-white/10 px-6 py-4 rounded-2xl"
             >
-              <h3 className="text-cyan-400 font-bold text-xl">1+</h3>
+              <h3 className="text-cyan-400 font-bold text-xl">2+</h3>
               <p className="text-gray-300 text-sm">Years Learning</p>
             </motion.div>
 
             <motion.div
               animate={{ y: [0, 15, 0] }}
               transition={{ repeat: Infinity, duration: 4 }}
-              className="absolute bottom-10 -right-10 bg-white/10 backdrop-blur-xl border border-white/10 px-6 py-4 rounded-2xl"
+              className="absolute bottom-10 -right-10 hidden sm:block bg-white/10 backdrop-blur-xl border border-white/10 px-6 py-4 rounded-2xl"
             >
               <h3 className="text-purple-400 font-bold text-xl">10+</h3>
               <p className="text-gray-300 text-sm">Projects</p>

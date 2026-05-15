@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import Mecaps from "../assets/Mecaps.jpg";
+import Hospital from "../assets/Hospital.jpg";
+import Game from "../assets/Game.jpg";
 
 import {
   FaGithub,
@@ -14,7 +16,7 @@ const projects = [
   description:
     "A modern mecaps automation platform with responsive UI, appointment modules and professional dashboard design.",
 
-  image: "",
+  image: Mecaps,
 
   tech: [
     "React",
@@ -28,7 +30,7 @@ const projects = [
   gradient: "from-cyan-500 to-blue-600",
 
   live: "https://mecaps.in",   
-  github: "#",
+  github: "",
 },
 
   {
@@ -38,7 +40,7 @@ const projects = [
     description:
       "A healthcare discovery platform helping users find hospitals, doctors and healthcare services with clean responsive design.",
 
-    image: Mecaps,
+    image: Hospital,
 
     tech: [
       "React",
@@ -51,7 +53,7 @@ const projects = [
     gradient: "from-purple-500 to-pink-500",
 
     live: "#",
-    github: "#",
+    github: "https://github.com/Subhanamaroof/hospital_discovery_FE.git",
   },
 
   {
@@ -61,8 +63,7 @@ const projects = [
     description:
       "A complete app project with modern UI, authentication system and responsive experience across devices.",
 
-    image:
-      "",
+    image: Game,
 
     tech: [
       "React Native",

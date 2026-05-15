@@ -84,21 +84,22 @@ export default function Footer() {
             <div className="flex gap-5">
 
               <a
-                href="#"
+                href="https://github.com/shahjahankhan462001-rgb"
                 className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl text-gray-300 hover:bg-cyan-500 hover:text-white hover:scale-110 transition-all duration-300"
               >
                 <FaGithub />
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/shahjahan-850819370/"
                 className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl text-gray-300 hover:bg-blue-500 hover:text-white hover:scale-110 transition-all duration-300"
               >
                 <FaLinkedin />
               </a>
 
               <a
-                href="#"
+                href="https://instagram.com/your-username"
+
                 className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl text-gray-300 hover:bg-pink-500 hover:text-white hover:scale-110 transition-all duration-300"
               >
                 <FaInstagram />
@@ -115,7 +116,7 @@ export default function Footer() {
 
           <p className="text-gray-500 text-center">
 
-            © 2026 Shahjahan. All Rights Reserved.
+            © 2026 Samiya. All Rights Reserved.
 
           </p>
 
