@@ -32,7 +32,7 @@ export default function App() {
       <Home />
       <About />
       <Skill />
-        <Cursor />
+      <Cursor />
       <Project />
       <Contact />
       <Footer />
