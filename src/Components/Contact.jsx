@@ -36,11 +36,10 @@ export default function Contact() {
     try {
       setLoading(true);
 
-      const response = await axios.post(
-        `${Base_Url}/api/contact/`,
-        formData
-      );
-
+     const response = await axios.post(
+  `${Base_Url}/api/contact/`,
+  formData
+);
       alert("Message Sent Successfully");
 
       console.log(response.data);
